@@ -4,7 +4,7 @@
 html(lang="en")
   head
     meta(charset="utf-8")
-    meta(name="description" content='Скажи "Goodbye" неловкости в английском с разговорным тренажером Nail this')
+    meta(name="description" content="Скажи Goodbye неловкости в английском с разговорным тренажером Nail this")
     meta(name="google-site-verification" content="6lgFhNrIVlzR05h_Ln7tnqiW0h6jL2hyDxzIJhjAhFI")
     meta(name="yandex-verification" content="2e760bb825ad117f")
     meta(name="viewport" content="minimal-ui")
@@ -13,9 +13,13 @@ html(lang="en")
     link(rel="apple-touch-icon" href='/favicon.png')
     title Nail This тренажер английского языка
     block scripts
-      script(src='../../js/index.js')
+      script(src='../../js/index.js')   
+      script(type='text/javascript' src='../../../lightzoom/lightzoom.js')
+
     block styles
       link(rel="stylesheet" href="../../styles/styles.scss")
+      link(rel='stylesheet' href='../../../lightzoom/style.css' type='text/css')
+
   body
     block content
     block foot

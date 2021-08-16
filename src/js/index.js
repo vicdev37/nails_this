@@ -1,10 +1,12 @@
-import module from './module'
-import jquery from 'jquery'
+import module from "./module";
+import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 
-
 $(document).ready(() => {
-  console.log($('body'))
-  module()
-})
-
+  jQuery(".lightzoom").lightzoom({
+    speed: 400,
+    viewTitle: true,
+    isOverlayClickClosing: true,
+  });
+  module();
+});
