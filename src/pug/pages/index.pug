@@ -1,263 +1,280 @@
 extends ../layout/layout.pug
 
 block content
-  header
-    .container
-      .header_content
-        .header_ellipse 
-          include ../../images/svg/header-ellipse.svg
-
-        .header_logo
-          include ../../images/svg/logo.svg
-        .header-right  
-          .header_nav 
-            nav
-              ul
-                li  
-                  a(href = "#for-who") Для кого 
-                li 
-                  a(href = "#about") О создателе
-                li 
-                  a(href = "#practic") Как устроена практика
-                li 
-                  a(href = "#feedback") Отзывы о тренажере
-          a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_btn Получить демо-версию      
-  main.main
-    section.header_section
+    
+    //form.freeprice#form
+      .freeprice-wrapper 
+        .freeprice-content
+          .close-price_form 
+            //include ../../images/img/form-close.svg
+          .freeprice_form-title Попробуй 14-дневный <br> пробный период!
+          .freeprice_form-search
+            input.freeprice_field#name(type="text" placeholder="Имя")
+            input.freeprice_field#phone(type="text" placeholder="Номер телефона")
+            button(type="submit").freeprice_button Хочу попробовать
+            .freeprice_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
+ 
+    
+    header
       .container
-        .header_section-wrapper 
-          .header_section-left
-            h1 Скажи “Goodbye” 
-            p неловкости в английском с разговорным тренажером <span>Nail this</span> 
-            a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn Получить демо-версию   
-          .header_section-right 
-            img(src="../../images/people.png")
-          a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn.mobile Получить демо-версию    
-      .wave 
-        img(src="../../images/wave.png")   
+        .header_content
+          .header_ellipse 
+            include ../../images/svg/header-ellipse.svg
 
-    section.futures 
-      .container 
-        .futures_title Тренажер <span>Nail This</span> это
-        .futures_blocks   
-          .future_block 
-            .future_block-img
-              include ../../images/svg/future1.svg
-            .future_block-title Доступно
-            .future_block-description получаешь месяц практики по цене одного урока с преподавателем 
-          .future_block 
-            .future_block-img
-              include ../../images/svg/future2.svg
-            .future_block-title Гибко
-            .future_block-description выбираешь сколько времени уделять практике каждую неделю
-          .future_block 
-            .future_block-img
-              include ../../images/svg/future3.svg
-            .future_block-title Практично
-            .future_block-description расширяешь активный словарный запас любого уровня
-          .future_block 
-            .future_block-img
-              include ../../images/svg/future4.svg
-            .future_block-title Эффективно
-            .future_block-description учишься по методике учителя с Кембриджским дипломом Delta
+          .header_logo
+            include ../../images/svg/logo.svg
+          .header-right  
+            .header_nav 
+              nav
+                ul
+                  li  
+                    a(href = "#for-who") <b> Для кого </b> 
+                  li 
+                    a(href = "#about") <b> О создателе </b>
+                  li 
+                    a(href = "#practic") <b> Как устроен тренажер </b>
+                  li 
+                    a(href = "#feedback") <b> Отзывы о тренажере </b>
+            a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_btn Попробовать бесплатно      
+    main.main
+      section.header_section
+        .container
+          .header_section-wrapper 
+            .header_section-left
+              h1 Скажи “Goodbye” 
+              p неловкости в английском с разговорным тренажером <span>Nail this</span> 
+              a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn Попробовать бесплатно   
+            .header_section-right 
+              img(src="../../images/people.png")
+            a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn.mobile Получить демо-версию    
+        .wave 
+          img(src="../../images/wave.png")   
 
-    section.forYou#for-who
-      .container 
-        .forYou_title Этот тренажер создан для тебя, если ты
-        .forYou_blocks   
-          .forYou_block.block1
-            .forYou_block-title Хочешь эффективно общаться на английском
-            .forYou_block-description тебе надоело искать слова и запинаться
-          .forYou_block.block2
-            .forYou_block-title Не любишь учить теорию
-            .forYou_block-description ты не будешь разбирать времена, учить правила и делать грамматические упражнения
-          .forYou_block.block3 
-            .forYou_block-title Хочешь овладеть коммуникацией
-            .forYou_block-description понимать носителей, использовать разговорные фразы, говорить
+      section.futures 
+        .container 
+          .futures_title Тренажер <span>Nail This</span> это
+          .futures_blocks   
+            .future_block 
+              .future_block-img
+                include ../../images/svg/future1.svg
+              .future_block-title Доступно
+              .future_block-description получаешь месяц практики по цене одного урока с преподавателем 
+            .future_block 
+              .future_block-img
+                include ../../images/svg/future2.svg
+              .future_block-title Гибко
+              .future_block-description выбираешь сколько времени уделять практике каждую неделю
+            .future_block 
+              .future_block-img
+                include ../../images/svg/future3.svg
+              .future_block-title Практично
+              .future_block-description расширяешь активный словарный запас любого уровня
+            .future_block 
+              .future_block-img
+                include ../../images/svg/future4.svg
+              .future_block-title Эффективно
+              .future_block-description учишься по методике учителя с Кембриджским дипломом Delta
 
-    section.founder#about 
-      .container
-        .fonder_wrapper
-          .founder_ellipse1  
-            include ../../images/svg/ellipse2.svg
-          .founder_info 
-            .founder_info-title Создатель тренажера  
-            .founder_info-name Юлия Беймлина
-            .founder_image.mobile 
+      section.forYou#for-who
+        .container 
+          .forYou_title Этот тренажер создан для тебя, если ты
+          .forYou_blocks   
+            .forYou_block.block1
+              .forYou_block-title Хочешь эффективно общаться на английском
+              .forYou_block-description тебе надоело искать слова и запинаться
+            .forYou_block.block2
+              .forYou_block-title Не любишь учить теорию
+              .forYou_block-description ты не будешь разбирать времена, учить правила и делать грамматические упражнения
+            .forYou_block.block3 
+              .forYou_block-title Хочешь овладеть коммуникацией
+              .forYou_block-description понимать носителей, использовать разговорные фразы, говорить
+
+      section.founder#about 
+        .container
+          .fonder_wrapper
+            .founder_ellipse1  
+              include ../../images/svg/ellipse2.svg
+            .founder_info 
+              .founder_info-title Создатель тренажера  
+              .founder_info-name Юлия Беймлина
+              .founder_image.mobile 
+                img(src="../../images/founder.jpg")  
+              ul.founder_info-list
+                li Выиграла американскую стипендию Фулбрайт на учебу и <br> преподавание в США
+                li Выступала на профильных конференциях для преподавателей
+                li Получила Кембриджский диплом по методике преподавания Delta
+                li Преподавала в 5 странах
+                li Тренировала учителей английского в языковых и частных школах
+            .founder_image 
               img(src="../../images/founder.jpg")  
-            ul.founder_info-list
-              li Выиграла американскую стипендию Фулбрайт на учебу и <br> преподавание в США
-              li Выступала на профильных конференциях для преподавателей
-              li Получила Кембриджский диплом по методике преподавания Delta
-              li Преподавала в 5 странах
-              li Тренировала учителей английского в языковых и частных школах
-          .founder_image 
-            img(src="../../images/founder.jpg")  
-          .founder_ellipse2
-            include ../../images/svg/ellipse3.svg
+            .founder_ellipse2
+              include ../../images/svg/ellipse3.svg
 
-        .founder-certificates
-          .founder-certificate
-            a.lightzoom(href='../../images/certificate1.png')
-              img(src="../../images/certificate1.png")
-          .founder-certificate
-            a.lightzoom(href='../../images/certificate2.png')
-              img(src="../../images/certificate2.png")
-          .founder-certificate
-            a.lightzoom(href='../../images/certificate3.png')
-              img(src="../../images/certificate3.png")
+          .founder-certificates
+            .founder-certificate
+              a.lightzoom(href='../../images/certificate1.png')
+                img(src="../../images/certificate1.png")
+            .founder-certificate
+              a.lightzoom(href='../../images/certificate2.png')
+                img(src="../../images/certificate2.png")
+            .founder-certificate
+              a.lightzoom(href='../../images/certificate3.png')
+                img(src="../../images/certificate3.png")
 
-    section.steps#practic
-      .container 
-        .steps_title Каждую неделю в закрытой группе ты <br> повторяешь простые действия
-        .steps_content-wrapper
-          .steps_img
-            img(src="../../images/steps.jpg")
-          .steps_blocks 
-            .step_block
-              .step_number  
-                include ../../images/svg/1.svg
-              .step_info 
-                .step_title.step_title-1 Делаешь 2 задания
-                .step_description 
-                  | Задания публикуются в закрытой группе по понедельникам и пятницам. <br>
-                  | В удобное время ты смотришь короткую запись разговора носителей, отвечаешь на вопросы и <br> разбираешь десяток разговорных фраз из видео.
-                  | <br> Ты записываешь ответы в комментарии к заданию. Куратор дает обратную связь.
-            .step_block
-              .step_number  
-                include ../../images/svg/2.svg
-              .step_info 
-                .step_title.step_title-2 Говоришь с новым напарником
-                .step_description 
-                  | Напарник — это участник тренажера твоего уровня. <br>
-                  | В удобное время ты созваниваешься с напарником, обсуждаешь задание и <br> используешь новые фразы из задания.<br>
-                  | Запись беседы с напарником ты выкладываешь в закрытую группу и получаешь <br> фидбэк от других участников..
-            .step_block
-              .step_number  
-                include ../../images/svg/3.svg
-              .step_info 
-                .step_title.step_title-3 Получаешь неограниченную поддержку и практику
-                .step_description 
-                  | Ты можешь разговаривать с напарником и другими участниками без лимита. <br>
-                  | Доступ к помощи куратора и участников 24/7. <br>
-                  | Раз в неделю ты можешь прийти на групповую встречу с куратором, получить обратную <br> связь и дополнительный разбор заданий.
+      section.steps#practic
+        .container 
+          .steps_title Каждую неделю в закрытой группе ты <br> повторяешь простые действия
+          .steps_content-wrapper
+            .steps_img
+              img(src="../../images/steps.jpg")
+            .steps_blocks 
+              .step_block
+                .step_number  
+                  include ../../images/svg/1.svg
+                .step_info 
+                  .step_title.step_title-1 Делаешь 2 задания
+                  .step_description 
+                    | Задания публикуются в закрытой группе по понедельникам и пятницам. <br>
+                    | В удобное время ты смотришь короткую запись разговора носителей, отвечаешь на вопросы и <br> разбираешь десяток разговорных фраз из видео.
+                    | <br> Ты записываешь ответы в комментарии к заданию. Куратор дает обратную связь.
+              .step_block
+                .step_number  
+                  include ../../images/svg/2.svg
+                .step_info 
+                  .step_title.step_title-2 Говоришь с новым напарником
+                  .step_description 
+                    | Напарник — это участник тренажера твоего уровня. <br>
+                    | В удобное время ты созваниваешься с напарником, обсуждаешь задание и <br> используешь новые фразы из задания.<br>
+                    | Запись беседы с напарником ты выкладываешь в закрытую группу и получаешь <br> фидбэк от других участников..
+              .step_block
+                .step_number  
+                  include ../../images/svg/3.svg
+                .step_info 
+                  .step_title.step_title-3 Получаешь неограниченную поддержку и практику
+                  .step_description 
+                    | Ты можешь разговаривать с напарником и другими участниками без лимита. <br>
+                    | Доступ к помощи куратора и участников 24/7. <br>
+                    | Раз в неделю ты можешь прийти на групповую встречу с куратором, получить обратную <br> связь и дополнительный разбор заданий.
 
-    section.videos 
-      .container 
-        .videos_title Смотри как участница тренажера разговаривает с <br> напарниками по заданию в начале и сейчас
-        .videos_wrapper 
-          .video 
-            iframe(src='https://www.youtube.com/embed/dJRfG5AxJ8k' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-          .video 
-            iframe(src='https://www.youtube.com/embed/NYEmd1dgyLw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      section.videos 
+        .container 
+          .videos_title Смотри как участница тренажера разговаривает с <br> напарниками по заданию в начале и сейчас
+          .videos_wrapper 
+            .video 
+              iframe(src='https://www.youtube.com/embed/dJRfG5AxJ8k' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .video 
+              iframe(src='https://www.youtube.com/embed/NYEmd1dgyLw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 
-    section.price 
-      .container 
-        .price_title Сколько стоит подписаться на тренажер Nail this?
-        .price_blocks-wrapper 
-          .price_block
-            .price_block-month 1 месяц
-            .price_block-description Убедись в эффективности тренажера
-            .price_block-price 3000 ₽     
-          .price_block
-            .price_block-month 3 месяца
-            .price_block-description Экономь 2 500 ₽ и получи первый LEVEL UP
-            .price_block-price 6500 ₽
-          .price_block
-            .price_block-month 6 месяцев
-            .price_block-description Экономь 5 000 ₽ и <br> почувствуй рывок
-            .price_block-price 13000 ₽
-          .price_block
-            .price_block-month 12 месяцев
-            .price_block-description Экономь 16 000 ₽ и получи уверенность в себе
-            .price_block-price 20000 ₽
-        a(href="https://t.me/yulia_nail_this" target="_blank").btn.price_btn Получить демо-версию    
+      section.price 
+        .container 
+          .price_title Сколько стоит подписаться на тренажер Nail this?
+          .price_blocks-wrapper 
+            .price_block
+              .price_block-month 1 месяц
+              .price_block-description Убедись в эффективности тренажера
+              .price_block-price 3000 ₽     
+              //button.price_btn Подписаться
+            .price_block
+              .price_block-month 3 месяца
+              .price_block-description Экономь 2 500 ₽ и получи первый LEVEL UP
+              .price_block-price 6500 ₽
+              //button.price_btn Подписаться
+            .price_block
+              .price_block-month 6 месяцев
+              .price_block-description Экономь 5 000 ₽ и <br> почувствуй рывок
+              .price_block-price 13000 ₽
+              //button.price_btn Подписаться
+            //.price_block
+              .price_block-month 12 месяцев
+              .price_block-description Экономь 16 000 ₽ и получи уверенность в себе
+              .price_block-price 20000 ₽
+          a(href="https://t.me/yulia_nail_this" target="_blank").btn.price_btn Попробовать бесплатно    
 
-    section.feedback#feedback 
-      .container
-        .feedback_title Что участники говорят о нас?
-        .feedback_blocks-wrapper 
-          .feedback_block 
-            .feedback_block-text
-              p Мне стало не так страшно разговаривать на английском, я думаю, что это большой плюс. А еще фразы, которые мы используем в заданиях, помогают расширять словарный запас! 
-              .feedback_block-arrow
-                img(src="../../images/arrow.png")
-            .feedback_block-face
-              img(src="../../images/face1.png")
-            .feedback_block-name <span>Ирина Х</span>, <br> Бизнес аналитик Techno Ltd  
-          .feedback_block 
-            .feedback_block-text
-              p В повседневной жизни я получаю очень много информации из англоязычных источников, приходится много переписываться на английском, но разговорной практики не хватает. Курс устраняет этот пробел.
-              .feedback_block-arrow
-                img(src="../../images/arrow.png")
-            .feedback_block-face
-              img(src="../../images/face2.png")
-            .feedback_block-name <span>Дмитрий Б</span>, <br> COO & Со-основатель CrocoMobi  
-          .feedback_block 
-            .feedback_block-text
-              p Однозначно ощущаю пользу от тренажера. Получается лучше формулировать мысли на английском + уменьшен страх разговора на языке, меньше теряюсь при реальном разговоре. 
-              .feedback_block-arrow
-                img(src="../../images/arrow.png")
-            .feedback_block-face
-              img(src="../../images/face3.png") 
-            .feedback_block-name <span>Руслан Ш</span>, <br> CEO Donor Search  
+      section.feedback#feedback 
+        .container
+          .feedback_title Что участники говорят о нас?
+          .feedback_blocks-wrapper 
+            .feedback_block 
+              .feedback_block-text
+                p Мне стало не так страшно разговаривать на английском, я думаю, что это большой плюс. А еще фразы, которые мы используем в заданиях, помогают расширять словарный запас! 
+                .feedback_block-arrow
+                  img(src="../../images/arrow.png")
+              .feedback_block-face
+                img(src="../../images/face1.png")
+              .feedback_block-name <span>Ирина Х</span>, <br> Бизнес аналитик Techno Ltd  
+            .feedback_block 
+              .feedback_block-text
+                p В повседневной жизни я получаю очень много информации из англоязычных источников, приходится много переписываться на английском, но разговорной практики не хватает. Курс устраняет этот пробел.
+                .feedback_block-arrow
+                  img(src="../../images/arrow.png")
+              .feedback_block-face
+                img(src="../../images/face2.png")
+              .feedback_block-name <span>Дмитрий Б</span>, <br> COO & Со-основатель CrocoMobi  
+            .feedback_block 
+              .feedback_block-text
+                p Однозначно ощущаю пользу от тренажера. Получается лучше формулировать мысли на английском + уменьшен страх разговора на языке, меньше теряюсь при реальном разговоре. 
+                .feedback_block-arrow
+                  img(src="../../images/arrow.png")
+              .feedback_block-face
+                img(src="../../images/face3.png") 
+              .feedback_block-name <span>Руслан Ш</span>, <br> CEO Donor Search  
 
-    section.single-video 
-      .container 
-        .videos_wrapper 
-          .video 
-            iframe(width='560' height='315' src='https://www.youtube.com/embed/ohdWWI0dOy0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      section.single-video 
+        .container 
+          .videos_wrapper 
+            .video 
+              iframe(width='560' height='315' src='https://www.youtube.com/embed/ohdWWI0dOy0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 
 
-    footer
-      .container
-        .footer_title Получи Демо тренажера!
-        .footer_subtitle Свяжись с куратором
-        .footer_socials
-          a.footer_social-item(href='https://t.me/nailthis' target='_blank')
-            .footer_social-icon
-              img(src='../../images/svg/telegram.svg')
-            .footer_social-name telegram
-          a.footer_social-item(href='whatsapp://send?phone=+79268718211' target='_blank')
-            .footer_social-icon
-              img(src='../../images/svg/whatsapp.svg')
-            .footer_social-name whatsapp
-          a.footer_social-item(href='https://www.facebook.com/yulia.beymlina' target='_blank')
-            .footer_social-icon
-              img(src='../../images/svg/facebook.svg')
-            .footer_social-name facebook
+      footer
+        .container
+          .footer_title Блог NailThis
+          //.footer_subtitle Свяжись с куратором
+          .footer_socials
+            a.footer_social-item(href='https://t.me/nailthis' target='_blank')
+              .footer_social-icon
+                img(src='../../images/svg/telegram.svg')
+              .footer_social-name telegram
+            //a.footer_social-item(href='whatsapp://send?phone=+79268718211' target='_blank')
+              .footer_social-icon
+                img(src='../../images/svg/whatsapp.svg')
+              .footer_social-name whatsapp
+            //a.footer_social-item(href='https://www.facebook.com/yulia.beymlina' target='_blank')
+              .footer_social-icon
+                img(src='../../images/svg/facebook.svg')
+              .footer_social-name facebook
 
 
 
-    //- <footer id="get-demo">
-    //-   <div class="container">
-    //-     <div class="footer_title">Получи Демо тренажера!</div>
-    //-     <div class="footer_subtitle">Свяжись с куратором</div>
-    //-     <div class="footer_socials">
-    //-       <a href="https://t.me/nailthis" target="_blank" class='footer_social-item'>
-    //-         <div class="footer_social-icon">
-    //-           <img src='../../images/svg/telegram.svg'>
-    //-         </div>
-    //-         <div class="footer_social-name">telegram</div>
-    //-       </a>
-    //-       <a href="whatsapp://send?phone=+79268718211" target="_blank" class='footer_social-item'>
-    //-         <div class="footer_social-icon">
-    //-           <img src='../../images/svg/whatsapp.svg'>
-    //-         </div>
-    //-         <div class="footer_social-name">whatsapp</div>
-    //-       </a>
-    //-       <a href="https://www.facebook.com/yulia.beymlina" target="_blank" class='footer_social-item'>
-    //-         <div class="footer_social-icon">
-    //-           <img src='../../images/svg/facebook.svg'>
-    //-         </div>
-    //-         <div class="footer_social-name">facebook</div>
-    //-       </a>
-    //-     </div>  
-    //-   </div>
-    //- </footer>      
+      //- <footer id="get-demo">
+      //-   <div class="container">
+      //-     <div class="footer_title">Получи Демо тренажера!</div>
+      //-     <div class="footer_subtitle">Свяжись с куратором</div>
+      //-     <div class="footer_socials">
+      //-       <a href="https://t.me/nailthis" target="_blank" class='footer_social-item'>
+      //-         <div class="footer_social-icon">
+      //-           <img src='../../images/svg/telegram.svg'>
+      //-         </div>
+      //-         <div class="footer_social-name">telegram</div>
+      //-       </a>
+      //-       <a href="whatsapp://send?phone=+79268718211" target="_blank" class='footer_social-item'>
+      //-         <div class="footer_social-icon">
+      //-           <img src='../../images/svg/whatsapp.svg'>
+      //-         </div>
+      //-         <div class="footer_social-name">whatsapp</div>
+      //-       </a>
+      //-       <a href="https://www.facebook.com/yulia.beymlina" target="_blank" class='footer_social-item'>
+      //-         <div class="footer_social-icon">
+      //-           <img src='../../images/svg/facebook.svg'>
+      //-         </div>
+      //-         <div class="footer_social-name">facebook</div>
+      //-       </a>
+      //-     </div>  
+      //-   </div>
+      //- </footer>      
 
 
-          
+            
 
 
 

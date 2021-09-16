@@ -16,6 +16,17 @@
   font-weight: $light;
 }
 
+//попап попробовать бесплатно начало
+.freeprice_form-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.freeprice_field {
+  margin-top: 25px;
+}
+//попап попробовать бесплатно конец
+
 header {
   position: relative;
   padding-top: 36px;
@@ -241,12 +252,12 @@ header {
 }
 
 .forYou_block-description {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   text-align: center;
   letter-spacing: -0.04em;
-  color: #112d57;
+  color: #7661f0c4;
   margin-top: 16px;
 }
 
@@ -465,6 +476,7 @@ header {
   align-items: stretch;
   margin-top: 32px;
   margin-left: -40px;
+  justify-content: center;
 }
 
 .price_block {
@@ -516,6 +528,7 @@ header {
   text-align: center;
   color: #ffffff;
   margin: 40px auto;
+  border: 0;
 }
 
 .feedback {
