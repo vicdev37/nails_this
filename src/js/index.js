@@ -139,8 +139,8 @@ $(() => {
 
   $('.close-price_form ').on('click', () => {
     $('.freeprice').removeClass('freeprice_active');
+    //подключения кнопок конец 
   })
 
-  //подключения кнопок конец 
-})
 
+})
