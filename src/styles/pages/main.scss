@@ -17,15 +17,182 @@
 }
 
 //попап попробовать бесплатно начало
+
+.freeprice {
+  display: none;
+}
+
+.freeprice_active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: brightness(20%);
+  z-index: 10;
+  height: 100vh;
+  .freeprice-wrapper {
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+  }  
+}
+
+.freeprice-content {
+  display: block;
+}
+
+.close-price_form {
+  position: relative;
+  top: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  right: 20;
+}
+
+.freeprice_form-title {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .freeprice_form-search {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .freeprice_field {
   margin-top: 25px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
 }
+
+.freeprice_button {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #af8fef;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+  min-height: 47px;
+  width: 210px;
+  font-weight: bold;
+}
+
+.freeprice_warning {
+  text-align: center;
+  margin-top: 25px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
 //попап попробовать бесплатно конец
+
+//попап подписаться начало
+
+.subscribe {
+  display: none;
+}
+
+.subscribe_active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: brightness(20%);
+  z-index: 10;
+  height: 100vh;
+  .subscribe-wrapper {
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+  }  
+}
+
+.subscribe-content {
+  display: block;
+}
+
+.subscribe_form {
+  position: relative;
+  top: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  right: 20;
+}
+
+.subscribe_form-title {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.subscribe_form-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe_field {
+  margin-top: 25px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.freeprice_button {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #af8fef;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+  min-height: 47px;
+  width: 210px;
+  font-weight: bold;
+}
+
+.subscribe_warning {
+  text-align: center;
+  margin-top: 25px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+
+//попап подписаться конец
+
 
 header {
   position: relative;
@@ -517,6 +684,21 @@ header {
 }
 
 .price_btn {
+  max-width: 405px;
+  width: 100%;
+  min-height: 66px;
+  background: #af8fef;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: 40px auto;
+  border: 0;
+}
+
+.price-btn {
   max-width: 405px;
   width: 100%;
   min-height: 66px;

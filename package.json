@@ -33,7 +33,8 @@
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "parcel-plugin-custom-dist-structure": "^1.1.3",
-    "postcss-modules": "^1.4.1"
+    "postcss-modules": "^1.4.1",
+    "sweetalert2": "^11.1.5"
   },
   "customDistStructure": {
     "config": {
