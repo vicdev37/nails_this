@@ -61,12 +61,16 @@
   margin-top: 25px;
   font-weight: bold;
   font-size: 20px;
+  @include mobile {
+    padding-top: 15px;
+  }
 }
 
 .freeprice_form-search {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .freeprice_field {
@@ -76,7 +80,15 @@
   border: 1px solid black;
   outline: none;
   text-align: center;
+  @include mobile {
+    margin-left: 5px ;
+    margin-right: 5px;
+  }
+  @include small {
+    padding: 8px 20px;
+  }
 }
+
 
 .freeprice_button {
   margin-top: 25px;
@@ -101,6 +113,10 @@
   padding-bottom: 60px;
   font-weight: bold;
   font-size: 10px;
+  @include mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 //попап попробовать бесплатно конец
@@ -150,6 +166,9 @@
   margin-top: 25px;
   font-weight: bold;
   font-size: 20px;
+  @include mobile {
+    padding-top: 15px;
+  }
 }
 
 .subscribe_form-search {
@@ -165,6 +184,13 @@
   border: 1px solid black;
   outline: none;
   text-align: center;
+  @include mobile {
+    margin-left: 5px ;
+    margin-right: 5px;
+  }
+  @include small {
+    padding: 8px 20px;
+  }
 }
 
 .freeprice_button {
@@ -190,6 +216,10 @@
   padding-bottom: 60px;
   font-weight: bold;
   font-size: 10px;
+  @include mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 
@@ -652,7 +682,7 @@ header {
   max-width: 269px;
   width: 100%;
   min-height: 271px;
-  padding: 59px 27px 44px 27px;
+  padding: 59px 27px 4px 27px;
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -698,6 +728,8 @@ header {
   color: #ffffff;
   margin: 40px auto;
   border: 0;
+  margin-top: 70px;
+  cursor: pointer;
 }
 
 .price-btn {
