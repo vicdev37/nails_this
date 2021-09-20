@@ -6,3 +6,15 @@
     font-style: $style;
   }
 }
+
+@mixin mobile {
+  @media (max-width:660px){
+    @content
+  }
+}
+
+@mixin small {
+  @media (max-width:308px){
+    @content
+  }
+}
