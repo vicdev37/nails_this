@@ -33,14 +33,18 @@
   z-index: 10;
   height: 100vh;
   .freeprice-wrapper {
-    max-width: 600px;
+    max-width: 450px;
+    width: 100%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     z-index: 100;
-  }  
+    @include mobile {
+      max-width: 90%;
+    }
+  }
 }
 
 .freeprice-content {
@@ -70,10 +74,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .freeprice_field {
+  max-width: 224px;
+  width: 100%;
   margin-top: 25px;
   padding: 8px 40px;
   border-radius: 10px;
@@ -81,28 +86,12 @@
   outline: none;
   text-align: center;
   @include mobile {
-    margin-left: 5px ;
+    margin-left: 5px;
     margin-right: 5px;
   }
   @include small {
     padding: 8px 20px;
   }
-}
-
-
-.freeprice_button {
-  margin-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #af8fef;
-  border-radius: 10px;
-  color: #ffffff;
-  cursor: pointer;
-  border: 0px;
-  min-height: 47px;
-  width: 210px;
-  font-weight: bold;
 }
 
 .freeprice_warning {
@@ -138,14 +127,18 @@
   z-index: 10;
   height: 100vh;
   .subscribe-wrapper {
-    max-width: 600px;
+    max-width: 450px;
+    width: 100%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     z-index: 100;
-  }  
+    @include mobile {
+      max-width: 90%;
+    }
+  }
 }
 
 .subscribe-content {
@@ -185,7 +178,7 @@
   outline: none;
   text-align: center;
   @include mobile {
-    margin-left: 5px ;
+    margin-left: 5px;
     margin-right: 5px;
   }
   @include small {
@@ -194,6 +187,9 @@
 }
 
 .freeprice_button {
+  min-height: 47px;
+  max-width: 224px;
+  width: 100%;
   margin-top: 25px;
   display: flex;
   align-items: center;
@@ -203,8 +199,7 @@
   color: #ffffff;
   cursor: pointer;
   border: 0px;
-  min-height: 47px;
-  width: 210px;
+
   font-weight: bold;
 }
 
@@ -222,9 +217,7 @@
   }
 }
 
-
 //попап подписаться конец
-
 
 header {
   position: relative;
@@ -386,8 +379,8 @@ header {
 }
 
 .future_block-description {
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 20px;
   color: #112d57;
   margin-top: 12px;
@@ -452,11 +445,11 @@ header {
 
 .forYou_block-description {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 150%;
   text-align: center;
   letter-spacing: -0.04em;
-  color: #7661f0c4;
+  color: #112d57;
   margin-top: 16px;
 }
 
@@ -745,6 +738,9 @@ header {
   color: #ffffff;
   margin: 40px auto;
   border: 0;
+  @include mobile {
+    font-size: 21px;
+  }
 }
 
 .feedback {
@@ -773,8 +769,8 @@ header {
 .feedback_block-text {
   height: 180px;
   position: relative;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 150%;
   text-align: center;
   color: #112d57;
