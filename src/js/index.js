@@ -42,7 +42,7 @@ $(() => {
     });
 
     const letterData = {
-      to: "justicejesus1237@gmail.com",
+      to: "yuliabeymlina@gmail.com",
       subject: 'Форма "Попробовать бесплатно"',
       text: "yo",
       html: createHtmlForEmail2(),
@@ -114,7 +114,7 @@ $(() => {
     });
 
     const letterData = {
-      to: "justicejesus1237@gmail.com",
+      to: "yuliabeymlina@gmail.com",
       subject: 'Форма "Подписаться"',
       text: "yo",
       html: createHtmlForEmail2(),
