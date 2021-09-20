@@ -2,18 +2,29 @@ extends ../layout/layout.pug
 
 block content
     
-    //form.freeprice#form
+    form.freeprice#form
       .freeprice-wrapper 
         .freeprice-content
           .close-price_form 
-            //include ../../images/img/form-close.svg
+            include ../../images/svg/form-close.svg
           .freeprice_form-title Попробуй 14-дневный <br> пробный период!
           .freeprice_form-search
             input.freeprice_field#name(type="text" placeholder="Имя")
             input.freeprice_field#phone(type="text" placeholder="Номер телефона")
-            button(type="submit").freeprice_button Хочу попробовать
+            button(type="submit").freeprice_button.sweet_click Хочу попробовать
             .freeprice_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
- 
+
+    form.subscribe#form2
+      .subscribe-wrapper 
+        .subscribe-content 
+          .close-price_form
+            include ../../images/svg/form-close.svg
+          .subscribe_form-title Свяжемся с вами и <br> ответим на ваши вопросы! 
+          .subscribe_form-search 
+            input.subscribe_field#name2(type="text" placeholder="Имя")
+            input.subscribe_field#phone2(type="text" placeholder="Номер телефона")
+            button(type="submit").freeprice_button Хочу попробовать
+            .subscribe_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
     
     header
       .container
@@ -35,7 +46,7 @@ block content
                     a(href = "#practic") <b> Как устроен тренажер </b>
                   li 
                     a(href = "#feedback") <b> Отзывы о тренажере </b>
-            a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_btn Попробовать бесплатно      
+            a.btn.header_btn Попробовать бесплатно      
     main.main
       section.header_section
         .container
@@ -43,10 +54,10 @@ block content
             .header_section-left
               h1 Скажи “Goodbye” 
               p неловкости в английском с разговорным тренажером <span>Nail this</span> 
-              a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn Попробовать бесплатно   
+              a.btn.header_section-btn Попробовать бесплатно   
             .header_section-right 
               img(src="../../images/people.png")
-            a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn.mobile Получить демо-версию    
+            //a(href="https://t.me/yulia_nail_this" target="_blank").btn.header_section-btn.mobile Получить демо-версию    
         .wave 
           img(src="../../images/wave.png")   
 
@@ -173,22 +184,18 @@ block content
               .price_block-month 1 месяц
               .price_block-description Убедись в эффективности тренажера
               .price_block-price 3000 ₽     
-              //button.price_btn Подписаться
+              button.price_btn Подписаться
             .price_block
               .price_block-month 3 месяца
               .price_block-description Экономь 2 500 ₽ и получи первый LEVEL UP
               .price_block-price 6500 ₽
-              //button.price_btn Подписаться
+              button.price_btn Подписаться
             .price_block
               .price_block-month 6 месяцев
               .price_block-description Экономь 5 000 ₽ и <br> почувствуй рывок
               .price_block-price 13000 ₽
-              //button.price_btn Подписаться
-            //.price_block
-              .price_block-month 12 месяцев
-              .price_block-description Экономь 16 000 ₽ и получи уверенность в себе
-              .price_block-price 20000 ₽
-          a(href="https://t.me/yulia_nail_this" target="_blank").btn.price_btn Попробовать бесплатно    
+              button.price_btn Подписаться
+          a.btn.price-btn Попробовать бесплатно    
 
       section.feedback#feedback 
         .container

@@ -17,15 +17,207 @@
 }
 
 //попап попробовать бесплатно начало
+
+.freeprice {
+  display: none;
+}
+
+.freeprice_active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: brightness(20%);
+  z-index: 10;
+  height: 100vh;
+  .freeprice-wrapper {
+    max-width: 450px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    @include mobile {
+      max-width: 90%;
+    }
+  }
+}
+
+.freeprice-content {
+  display: block;
+}
+
+.close-price_form {
+  position: relative;
+  top: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  right: 20;
+}
+
+.freeprice_form-title {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  @include mobile {
+    padding-top: 15px;
+  }
+}
+
 .freeprice_form-search {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .freeprice_field {
+  max-width: 224px;
+  width: 100%;
   margin-top: 25px;
+  padding: 8px 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  @include mobile {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  @include small {
+    padding: 8px 20px;
+  }
 }
+
+.freeprice_warning {
+  text-align: center;
+  margin-top: 25px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 10px;
+  @include mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 //попап попробовать бесплатно конец
+
+//попап подписаться начало
+
+.subscribe {
+  display: none;
+}
+
+.subscribe_active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: brightness(20%);
+  z-index: 10;
+  height: 100vh;
+  .subscribe-wrapper {
+    max-width: 450px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    @include mobile {
+      max-width: 90%;
+    }
+  }
+}
+
+.subscribe-content {
+  display: block;
+}
+
+.subscribe_form {
+  position: relative;
+  top: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  right: 20;
+}
+
+.subscribe_form-title {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  @include mobile {
+    padding-top: 15px;
+  }
+}
+
+.subscribe_form-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe_field {
+  margin-top: 25px;
+  padding: 8px 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  @include mobile {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  @include small {
+    padding: 8px 20px;
+  }
+}
+
+.freeprice_button {
+  min-height: 47px;
+  max-width: 224px;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #af8fef;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+
+  font-weight: bold;
+}
+
+.subscribe_warning {
+  text-align: center;
+  margin-top: 25px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 10px;
+  @include mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+//попап подписаться конец
 
 header {
   position: relative;
@@ -187,8 +379,8 @@ header {
 }
 
 .future_block-description {
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 20px;
   color: #112d57;
   margin-top: 12px;
@@ -253,11 +445,11 @@ header {
 
 .forYou_block-description {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 150%;
   text-align: center;
   letter-spacing: -0.04em;
-  color: #7661f0c4;
+  color: #112d57;
   margin-top: 16px;
 }
 
@@ -483,7 +675,7 @@ header {
   max-width: 269px;
   width: 100%;
   min-height: 271px;
-  padding: 59px 27px 44px 27px;
+  padding: 59px 27px 4px 27px;
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -529,6 +721,26 @@ header {
   color: #ffffff;
   margin: 40px auto;
   border: 0;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.price-btn {
+  max-width: 405px;
+  width: 100%;
+  min-height: 66px;
+  background: #af8fef;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: 40px auto;
+  border: 0;
+  @include mobile {
+    font-size: 21px;
+  }
 }
 
 .feedback {
@@ -557,8 +769,8 @@ header {
 .feedback_block-text {
   height: 180px;
   position: relative;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 150%;
   text-align: center;
   color: #112d57;
