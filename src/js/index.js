@@ -9,12 +9,17 @@ $(() => {
   $("#phone2").mask("+7-000-000-00-00");
 
   //форма пробного начало
-  $(".header_btn").on("click", () => {
+  $(".header_btn, .header_section-btn, .price_btn").on("click", () => {
     $(".freeprice").addClass("freeprice_active");
+  });
+
+  $(".subscribe_btn").on("click", () => {
+    $(".subscribe").addClass("subscribe_active");
   });
 
   $(".close-price_form ").on("click", () => {
     $(".freeprice").removeClass("freeprice_active");
+    $(".subscribe").removeClass("subscribe_active");
   });
 
   $(document).on("click", (e) => {
@@ -78,15 +83,6 @@ $(() => {
       contentType: "application/json; charset=utf-8",
     });
   });
-  //отправка бесплатного конец
-  //форма подписки начало
-  $(".price_btn").on("click", () => {
-    $(".subscribe").addClass("subscribe_active");
-  });
-
-  $(".close-price_form ").on("click", () => {
-    $(".subscribe").removeClass("subscribe_active");
-  });
 
   //форма подписки конец
 
@@ -144,20 +140,4 @@ $(() => {
   //отправка подписки конец
 
   //подключения кнопок "попробовать бесплатно" начало
-  $(".header_section-btn").on("click", () => {
-    $(".freeprice").addClass("freeprice_active");
-  });
-
-  $(".close-price_form ").on("click", () => {
-    $(".freeprice").removeClass("freeprice_active");
-  });
-
-  $(".price-btn").on("click", () => {
-    $(".freeprice").addClass("freeprice_active");
-  });
-
-  $(".close-price_form ").on("click", () => {
-    $(".freeprice").removeClass("freeprice_active");
-    //подключения кнопок конец
-  });
 });

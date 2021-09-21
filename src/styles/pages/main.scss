@@ -734,7 +734,7 @@ header {
   cursor: pointer;
 }
 
-.price-btn {
+.subscribe_btn {
   max-width: 405px;
   width: 100%;
   min-height: 66px;
@@ -747,6 +747,7 @@ header {
   color: #ffffff;
   margin: 40px auto;
   border: 0;
+  cursor: pointer;
   @include mobile {
     font-size: 21px;
   }
