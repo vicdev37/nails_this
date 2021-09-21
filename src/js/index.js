@@ -17,16 +17,6 @@ $(() => {
     $(".freeprice").removeClass("freeprice_active");
   });
 
-  // $(".freeprice").on("click", (e) => {
-  //   // show_alerts is the class of the link to display the popup
-  //   if (!$(e.target).parents().andSelf().is(".freeprice")) {
-  //     $(".freeprice").removeClass("freeprice_active");
-  //   }
-  // });
-  // $(".freeprice").on("click", (e) => {
-  //   e.stopPropagation();
-  // });
-
   $(document).on("click", (e) => {
     let click = $(e.target);
     let outsideDiv = $(".freeprice-wrapper").parents();
@@ -63,8 +53,7 @@ $(() => {
     });
 
     const letterData = {
-      // to: "yuliabeymlina@gmail.com",
-      to: "justicejesus1237@gmail.com",
+      to: "yuliabeymlina@gmail.com",
       subject: 'Форма "Попробовать бесплатно"',
       text: "yo",
       html: createHtmlForEmail2(),
@@ -118,15 +107,6 @@ $(() => {
       </div>`;
     };
 
-    // if (name2 == '') {
-    //   $('#errorMassage').text("Введите имя")
-    //   return false;
-    // } else if (contact2 == '') {
-    //   $('#errorMassage').text("Введите контактные данные")
-    //   return false;
-    // }
-    // $('#errorMassage').text('')
-
     Swal.fire({
       position: "center",
       icon: "success",
@@ -136,8 +116,7 @@ $(() => {
     });
 
     const letterData = {
-      to: "justicejesus1237@gmail.com",
-      // to: "yuliabeymlina@gmail.com",
+      to: "yuliabeymlina@gmail.com",
       subject: 'Форма "Подписаться"',
       text: "yo",
       html: createHtmlForEmail2(),
