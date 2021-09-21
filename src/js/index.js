@@ -16,7 +16,28 @@ $(() => {
   $(".close-price_form ").on("click", () => {
     $(".freeprice").removeClass("freeprice_active");
   });
-  //форма пробного конец
+
+  // $(".freeprice").on("click", (e) => {
+  //   // show_alerts is the class of the link to display the popup
+  //   if (!$(e.target).parents().andSelf().is(".freeprice")) {
+  //     $(".freeprice").removeClass("freeprice_active");
+  //   }
+  // });
+  // $(".freeprice").on("click", (e) => {
+  //   e.stopPropagation();
+  // });
+
+  $(document).on("click", (e) => {
+    let click = $(e.target);
+    let outsideDiv = $(".freeprice-wrapper").parents();
+    let outsideDiv2 = $(".subscribe-wrapper").parents();
+    if (click.is(outsideDiv)) {
+      $(".freeprice").removeClass("freeprice_active");
+    }
+    if (click.is(outsideDiv2)) {
+      $(".subscribe").removeClass("subscribe_active");
+    }
+  });
 
   //отправка беплатного начало
   $("#form").on("submit", function (event) {
@@ -42,7 +63,8 @@ $(() => {
     });
 
     const letterData = {
-      to: "yuliabeymlina@gmail.com",
+      // to: "yuliabeymlina@gmail.com",
+      to: "justicejesus1237@gmail.com",
       subject: 'Форма "Попробовать бесплатно"',
       text: "yo",
       html: createHtmlForEmail2(),
@@ -114,7 +136,8 @@ $(() => {
     });
 
     const letterData = {
-      to: "yuliabeymlina@gmail.com",
+      to: "justicejesus1237@gmail.com",
+      // to: "yuliabeymlina@gmail.com",
       subject: 'Форма "Подписаться"',
       text: "yo",
       html: createHtmlForEmail2(),

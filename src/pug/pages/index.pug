@@ -3,28 +3,30 @@ extends ../layout/layout.pug
 block content
     
     form.freeprice#form
-      .freeprice-wrapper 
-        .freeprice-content
-          .close-price_form 
-            include ../../images/svg/form-close.svg
-          .freeprice_form-title Попробуй 14-дневный <br> пробный период!
-          .freeprice_form-search
-            input.freeprice_field#name(type="text" placeholder="Имя")
-            input.freeprice_field#phone(type="text" placeholder="Номер телефона")
-            button(type="submit").freeprice_button.sweet_click Хочу попробовать
-            .freeprice_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
+      .form-dialog
+        .freeprice-wrapper 
+          .freeprice-content
+            .close-price_form 
+              include ../../images/svg/form-close.svg
+            .freeprice_form-title Попробуй 14-дневный <br> пробный период!
+            .freeprice_form-search
+              input.freeprice_field#name(type="text" placeholder="Имя" required)
+              input.freeprice_field#phone(type="text" placeholder="Номер телефона" required)
+              button(type="submit").freeprice_button.sweet_click Хочу попробовать
+              .freeprice_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
 
     form.subscribe#form2
-      .subscribe-wrapper 
-        .subscribe-content 
-          .close-price_form
-            include ../../images/svg/form-close.svg
-          .subscribe_form-title Свяжемся с вами и <br> ответим на ваши вопросы! 
-          .subscribe_form-search 
-            input.subscribe_field#name2(type="text" placeholder="Имя")
-            input.subscribe_field#phone2(type="text" placeholder="Номер телефона")
-            button(type="submit").freeprice_button Хочу попробовать
-            .subscribe_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
+      .form-dialog
+        .subscribe-wrapper 
+          .subscribe-content 
+            .close-price_form
+              include ../../images/svg/form-close.svg
+            .subscribe_form-title Свяжемся с вами и <br> ответим на ваши вопросы! 
+            .subscribe_form-search 
+              input.subscribe_field#name2(type="text" placeholder="Имя" required)
+              input.subscribe_field#phone2(type="text" placeholder="Номер телефона" required)
+              button(type="submit").freeprice_button Хочу попробовать
+              .subscribe_warning Отправляя данные вы соглашаетесь с нашей <br> политикой конфиденциальности
     
     header
       .container
