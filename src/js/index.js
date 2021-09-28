@@ -2,11 +2,11 @@ import module from "./module";
 import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 import Swal from "sweetalert2";
-import mask from "jquery-mask-plugin";
+// import mask from "jquery-mask-plugin";
 
 $(() => {
-  $("#phone").mask("+7-000-000-00-00");
-  $("#phone2").mask("+7-000-000-00-00");
+  // $("#phone").mask("+7-000-000-00-00");
+  // $("#phone2").mask("+7-000-000-00-00");
 
   //форма пробного начало
   $(".header_btn, .header_section-btn, .price_btn").on("click", () => {
